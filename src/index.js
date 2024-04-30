@@ -6,7 +6,7 @@ import Header from "./header";
 import Main from "./main";
 import Aside from "./aside";
 import Footer from "./footer";
-import Carousels from "./carousles";
+import Carrousels from './carrousels';
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -14,9 +14,9 @@ root.render(
         <Header></Header>
         <div className="container">
             <div className="row">
-                <div className="col-md-8">
+                <div className="col-md-8 py-4">
+                <Carrousels></Carrousels>
                     <Main></Main>
-                    <Carousels></Carousels>
                 </div>
                 <div className="col-md-4">
                     <Aside></Aside>
