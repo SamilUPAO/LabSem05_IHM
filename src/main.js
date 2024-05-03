@@ -1,11 +1,37 @@
+import Carousel from 'react-bootstrap/Carousel';
+import { useNavigate } from "react-router-dom";
+import Productos from './data/productos.json'
+
+const feather = require('feather-icons');
+
+setTimeout(() => {
+    feather.replace();
+}, 1000);
+
 const Main = () => {
-    return (
-        <main>
-    <p>Bienvenido a Combo, tu destino de compras favorito en Trujillo. En Combo, nos enorgullece ofrecerte una experiencia de compra única y conveniente, donde la calidad, la variedad y el servicio excepcional se encuentran en cada rincón de nuestra tienda.
+    const navigate = useNavigate();
 
-Sumérgete en un mundo de opciones ilimitadas con nuestra amplia gama de productos. Desde abarrotes básicos hasta productos frescos y deliciosos, pasando por artículos de cuidado personal y productos para el hogar, tenemos todo lo que necesitas para satisfacer tus necesidades diarias.</p>
-        </main>
-    );
+    const handleClick = (slug) => {
+        navigate("/detalle/" + slug);
+    }
+
+    return <main>
+        <Carousel>
+            {
+                Productos.map(it => {
+                    return (<Carousel.Item onClick={(e) => {
+                        e.preventDefault(); handleClick(it.slug)
+                    }}>
+                        <img className='w-100 dark-image' src={it.picture}></img>
+                        <Carousel.Caption>
+                            <h3>{it.name}</h3>
+                            <p>{it.description}</p>
+                            <button className="btn btn-primary" >Ver detalle</button>
+                        </Carousel.Caption>
+                    </Carousel.Item>);
+                })
+            }
+        </Carousel>
+    </main >;
 }
-
 export default Main;
