@@ -12,7 +12,7 @@ const Header = () => {
       <a class="nav-item nav-link active text-info" href="#"><i data-feather="shopping-bag"></i>Productos <span class="sr-only"></span></a>
       <a class="nav-item nav-link text-info" href="#"><i data-feather="percent"></i>Descuentos</a>
       <a class="nav-item nav-link text-info" href="#"><i data-feather="home"></i>Iniciar Sesión</a>
-      <a class="nav-item nav-link disabled text-info" href="#"><i data-feather="phone"></i>Contáctanos</a>
+      <a class="nav-item nav-link active text-info" href="#"><i data-feather="phone"></i>Contáctanos</a>
     </div>
   </div>
 </nav>
