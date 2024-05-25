@@ -2,19 +2,19 @@
     {
         "name": "Producto 1",
         "slug": "producto-1",
-        "description": "Descripcion Producto 1",
+        "description": "Ultimo en descuentos",
         "picture": "https://i.pinimg.com/564x/d3/bd/39/d3bd39a11c7c0f854da24220e29cb78c.jpg"
     },
     {
         "name": "Producto 2",
         "slug": "producto-2",
-        "description": "Descripcion Producto 2",
+        "description": "Ultimo en descuentos",
         "picture": "https://pbs.twimg.com/media/EY4DdCIXkAY2oh4.jpg"
     },
     {
         "name": "Producto 3",
         "slug": "producto-3",
-        "description": "Descripcion Producto 3",
+        "description": "Ultimo en descuentos",
         "picture": "https://www.hiperbodegapreciouno.com.pe/wp-content/uploads/2024/05/chapa-tu-yapa-535x536%E2%80%8B-768x769.jpg"
     }
 ]

@@ -24,9 +24,9 @@ const Main = () => {
                     }}>
                         <img className='w-100 dark-image' src={it.picture}></img>
                         <Carousel.Caption>
-                            <h3>{it.name}</h3>
-                            <p>{it.description}</p>
-                            <button className="btn btn-primary" >Ver detalle</button>
+                            <h3 className="fw-bold text-dark">{it.name}</h3>
+                            <p className="fw-bold text-dark">{it.description}</p>
+                            <button className="btn btn-warning" >Ver detalle</button>
                         </Carousel.Caption>
                     </Carousel.Item>);
                 })

@@ -1,14 +1,10 @@
 const Footer = () => {
     return <footer>
-            <div className="footer-bottom mt-5">
-                <div className="container">
-                   
-                            <p className="text-center">© {new Date().getFullYear()} SAMIL GRADOS ARAUJO.</p>
-                        </div>
-                    </div>
-               
-          
+            <div className="bg-dark text-white mt-auto py-3 w-100">
+            <div className="container text-center">
+                <p className="m-0">© {new Date().getFullYear()} SAMIL GRADOS ARAUJO.</p>
+            </div>
+        </div>
     </footer>;
 }
-
 export default Footer;
